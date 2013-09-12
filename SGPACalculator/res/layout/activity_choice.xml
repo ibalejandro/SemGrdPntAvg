@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Choice"  >
+
+    <TextView
+        android:id="@+id/choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/choice" 
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"   />
+
+    <Button
+        android:id="@+id/cumgpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semgpa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:text="@string/cumulative"
+        android:padding="15dip"
+        android:textColor="#FFFFFF"
+        android:background="#32CD32"
+        android:onClick="selectCGPA" />
+
+    <Button
+        android:id="@+id/semgpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp"
+        android:text="@string/semester"
+        android:background="#00BFFF"
+        android:padding="15dip"
+        android:textColor="#FFFFFF"
+        android:onClick="selectSGPA" />
+
+</RelativeLayout>

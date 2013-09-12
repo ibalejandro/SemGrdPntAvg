@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#000000">
+
+    <Button
+        android:id="@+id/cAgain"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ok"
+        android:layout_alignBottom="@+id/ok"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="52dp"
+        android:text="@string/calcAg"
+        android:background="#9932CC"
+        android:textColor="#FFFFFF"
+        android:padding="10dip"
+        android:textSize="17sp"
+        android:onClick="calculateAgain"   />
+
+    <Button
+        android:id="@+id/ok"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/grade"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/ok"
+        android:background="#9932CC"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:onClick="exitHere"  />
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/res"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:text="@string/sgpa"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/sUserN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:text="@string/shownName"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+         />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sUserN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/result"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SGPACalculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="name">Name</string>
+    <string name="sign_in">Sign in</string>
+    <string name="cal_y_gpa">Calculate your GPA</string>
+    <string name="owner">By: Alejandro Sánchez A.</string>
+    <string name="year">2013</string>
+    <string name="menu_settings">Settings</string>
+    <string name="exception_name">Empty name!</string>
+    <string name="calculate">Calculate</string>
+    <string name="points">Points</string>
+    <string name="credits">Credits</string>
+    <string name="title_activity_calculator">Calculator</string>
+    <string name="datInError">Data insertion error</string>
+    <string name="shownName">User_Name</string>
+    <string name="ok">OK</string>
+    <string name="result">Your SGPA is :</string>
+    <string name="sgpa">5.00</string>
+    <string name="inv_name">Invalid name</string>
+    <string name="clear">Clear</string>
+    <string name="choice">What do you want to calculate?</string>
+    <string name="semester">Semester GPA</string>
+    <string name="cumulative">Cumulative GPA</string>
+    <string name="cumresult">Your CGPA is :</string><string name="calcAg">Calculate again!</string>
+    <string name="title_activity_choice">Choice</string>
+    
+
+</resources>

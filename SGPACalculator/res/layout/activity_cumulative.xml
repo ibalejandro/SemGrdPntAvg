@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+ >
+
+    <EditText
+        android:id="@+id/cumpoint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cumpoint1"
+        android:layout_below="@+id/cumpoint1"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/cumpoint3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cumpoint2"
+        android:layout_below="@+id/cumpoint2"
+        android:ems="3"
+        android:inputType="numberDecimal" 
+        android:textColor="#FFFFFF">
+        
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/cumpoint4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cumpoint3"
+        android:layout_below="@+id/cumpoint3"
+        android:ems="3"
+        android:inputType="numberDecimal" 
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/cumpoint6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cumpoint5"
+        android:layout_below="@+id/cumpoint5"
+        android:ems="3"
+        android:inputType="numberDecimal" 
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/cumpoint7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cumpoint6"
+        android:layout_below="@+id/cumpoint6"
+        android:ems="3"
+        android:inputType="numberDecimal" 
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/cumpoint8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cumpoint7"
+        android:layout_below="@+id/cumpoint7"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/cumpoint9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cumpoint8"
+        android:layout_below="@+id/cumpoint8"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/cumpoint10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cumpoint9"
+        android:layout_below="@+id/cumpoint9"
+        android:ems="3"
+        android:inputType="numberDecimal" 
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/cumpoint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cumpoints"
+        android:layout_marginRight="60dp"
+        android:layout_toLeftOf="@+id/cumcalculate"
+        android:ems="3"
+        android:inputType="numberDecimal" 
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/cumpoint5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cumpoint4"
+        android:layout_below="@+id/cumpoint4"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/cumpoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cumpoint1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/points"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/cumcalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cumpoint8"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:text="@string/calculate"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" 
+        android:background="#32CD32"
+        android:padding="15dip"
+        android:onClick="cumCalculate" />
+
+    <Button
+        android:id="@+id/cumclear"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/cumpoint5"
+        android:layout_alignLeft="@+id/cumcalculate"
+        android:layout_marginLeft="20dp"
+        android:text="@string/clear"
+        android:background="#9932CC"
+        android:textColor="#FFFFFF"
+        android:onClick="cumClearAll" />
+
+    <TextView
+        android:id="@+id/cumdataInError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cumcalculate"
+        android:layout_toRightOf="@+id/cumpoint1"
+        android:text="@string/datInError"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+</RelativeLayout>
